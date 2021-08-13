@@ -2,7 +2,6 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 .openning {
@@ -20,7 +19,8 @@ body {
 }
 
 #openning_logo {
-    top: -15%;
+    top: -12%;
+    position: fixed;
 }
 
 #openning_main_text,

@@ -40,3 +40,4 @@ function activeSearch(event) {
     const searchInput = document.querySelector(".search_input");
     searchInput.classList.toggle("active");
 }
+
