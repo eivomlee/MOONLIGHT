@@ -13,4 +13,4 @@ function move_scroll(event) {
 
 slide_btn.addEventListener("click", move_scroll);
 
-//스크롤시 달이 떨어지는 코드인데, 수정 요망
+//스크롤시 달이 떨어지는 코드인데, 수정 요망 
