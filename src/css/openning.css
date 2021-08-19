@@ -1,0 +1,42 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.openning {
+    height: 100vh;
+    background-color: #EEEAE7;
+    font-size: 32px;
+}
+
+.openning img {
+    margin: 0 auto;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#openning_logo {
+    top: -12%;
+    position: fixed;
+    height: 100vh;
+}
+
+#openning_main_text,
+#openning_text_manuscript {
+    top: 15%;
+    height: 90%;
+}
+
+#openning_down_button {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next_page_btn {
+    color: black;
+}

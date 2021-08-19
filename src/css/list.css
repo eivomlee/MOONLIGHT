@@ -1,0 +1,84 @@
+.movie_list_container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    z-index: 1;
+    background-color: #EEEAE7;
+}
+
+.list_header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+
+.list_title {
+    width: 18.2vw;
+    height: 100%;
+    margin-left: 1.4%;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.list_title_text {
+    width: 100%;
+    padding: 10%;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    font-weight: 900;
+    background-color: gray;
+}
+
+.list_middle {
+    width: 100%;
+    height: 75vh;
+}
+
+.list_main {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.list_wraper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 이미지 삽입해야함, px 단위로 임의로 그린 박스 */
+
+.content_box {
+    border-radius: 10px;
+    margin: 0px 1.4%;
+    box-sizing: border-box;
+    flex-basis: 18.2vw;
+    flex-shrink: 0;
+    height: 46.2vh;
+    background-color: gray;
+    color: gray;
+}
+
+.content {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.content_box {
+    position: relative;
+    transition: transform 500ms all;
+}
+
+.content_box:focus,
+.content_box:hover {
+  transform: scale(1.2);
+}
+
