@@ -1,3 +1,5 @@
+/*
+
 window.onload = function() {
     load_image();
 }
@@ -7,3 +9,5 @@ function load_image() {
     content.style.backgroundSize = "100% 100%";
     content.style.repeat = "no-repeat";
 }
+
+*/
