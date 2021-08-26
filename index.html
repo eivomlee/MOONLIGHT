@@ -11,15 +11,21 @@
     <link rel="stylesheet" type="text/css" href="src/css/openning.css">
     <link rel="stylesheet" type="text/css" href="src/css/main_index.css">
     <link rel="stylesheet" type="text/css" href="src/css/list.css">
-    <link rel="stylesheet" type="text/css" href="src/css/list_slide.css">
     <!--아이콘 삽입을 위한 fontawesome,google font 파일-->
     <script src="https://kit.fontawesome.com/a10e09fadf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--ReactJS 스크립트-->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--라이브러리-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
     <!--폰트 설정 구글웹폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!---->
 </head>
 
 <body>
@@ -68,22 +74,30 @@
     </div>
     <!--세번째 페이지-->
     <div class="movie_list_container">
-        <h1 class = "movie_list_title">오늘의 달빛영화제</h1>
-        <div class = "movie_list_wrapper">
-            <div class = "movie_list">
+        <h1 class="movie_list_title">오늘의 달빛영화제</h1>
+        <div class="movie_list_wrapper">
+            <div class="movie_list">
+            </div>
+            <i class="fas fa-angle-right arrow"></i>
+        </div>
+    </div>
+    <div class="movie_list_container">
+        <h1 class="movie_list_title">초급제작실습</h1>
+        <div class="movie_list_wrapper">
+            <div class="movie_list beginner_list">
                 <div class="movie_list_item">
-                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                     <span class="movie_list_item_title">MOONLIGHT</span>
-                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                     <button class="movie_list_item_button">Watch</button>
+                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
+                    <span class="movie_list_item_title">MOONLIGHT</span>
+                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
+                    <button class="movie_list_item_button">Watch</button>
                 </div>
                 <div class="movie_list_item">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
                     <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
+                </div>
+                <div class="movie_list_item">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -94,8 +108,8 @@
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
                     <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
+                </div>
+                <div class="movie_list_item">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -130,34 +144,10 @@
         </div>
     </div>
     <div class="movie_list_container">
-        <h1 class = "movie_list_title">초급제작실습</h1>
-        <div class = "movie_list_wrapper">
-            <div class = "movie_list">
-                <div class="movie_list_item">
-                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                     <span class="movie_list_item_title">MOONLIGHT</span>
-                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                     <button class="movie_list_item_button">Watch</button>
-                </div>
-                <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-                </div>
-                <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
+        <h1 class="movie_list_title">중급제작실습</h1>
+        <div class="movie_list_wrapper">
+            <div class="movie_list">
+                <div class="movie_list_item advanced_list">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -182,44 +172,6 @@
                     <button class="movie_list_item_button">Watch</button>
                 </div>
                 <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-                </div>
-            </div>
-            <i class="fas fa-angle-right arrow"></i>
-        </div>
-    </div>
-    <div class="movie_list_container">
-        <h1 class = "movie_list_title">중급제작실습</h1>
-        <div class = "movie_list_wrapper">
-            <div class = "movie_list">
-                <div class="movie_list_item">
-                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                     <span class="movie_list_item_title">MOONLIGHT</span>
-                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                     <button class="movie_list_item_button">Watch</button>
-                </div>
-                <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-                </div>
-                <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -254,22 +206,10 @@
         </div>
     </div>
     <div class="movie_list_container">
-        <h1 class = "movie_list_title">졸업프로젝트</h1>
-        <div class = "movie_list_wrapper">
-            <div class = "movie_list">
-                <div class="movie_list_item">
-                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                     <span class="movie_list_item_title">MOONLIGHT</span>
-                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                     <button class="movie_list_item_button">Watch</button>
-                </div>
-                <div class="movie_list_item">
-                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
-                    <span class="movie_list_item_title">MOONLIGHT</span>
-                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
-                    <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
+        <h1 class="movie_list_title">졸업프로젝트</h1>
+        <div class="movie_list_wrapper">
+            <div class="movie_list">
+                <div class="movie_list_item graduate_list">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -280,8 +220,20 @@
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
                     <button class="movie_list_item_button">Watch</button>
-               </div>
-               <div class="movie_list_item">
+                </div>
+                <div class="movie_list_item">
+                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
+                    <span class="movie_list_item_title">MOONLIGHT</span>
+                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
+                    <button class="movie_list_item_button">Watch</button>
+                </div>
+                <div class="movie_list_item">
+                    <img class="movie_list_item_img" src="src/img/poster1.jpeg">
+                    <span class="movie_list_item_title">MOONLIGHT</span>
+                    <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
+                    <button class="movie_list_item_button">Watch</button>
+                </div>
+                <div class="movie_list_item">
                     <img class="movie_list_item_img" src="src/img/poster1.jpeg">
                     <span class="movie_list_item_title">MOONLIGHT</span>
                     <p class="movie_list_item_desc">MOONLIGHT MOVIE FESTIVAL</p>
@@ -314,11 +266,13 @@
             </div>
             <i class="fas fa-angle-right arrow"></i>
         </div>
+        <div class="react_test"></div>
     </div>
     <!-- js파일 -->
+    <script src="src/js/require.js"></script>
+    <script src="src/js/Movie_list.js" type="text/babel"></script>
     <script src="src/js/openning.js"></script>
     <script src="src/js/main_index.js"></script>
     <script src="src/js/list.js"></script>
 </body>
-
 </html>

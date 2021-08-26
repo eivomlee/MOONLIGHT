@@ -6,10 +6,9 @@ arrows.forEach((arrow, i)=>{
     let clickCounter = 0;
     arrow.addEventListener("click", () => {
         clickCounter++;
-        if(itemNumber - (5 + clickCounter) >= 0){
+        if(itemNumber - (4 + clickCounter) >= 0){
             movieList[i].style.transform = `translateX(${
-                movieList[i].computedStyleMap().get("transform")[0].x.value
-            -345}px)`;
+                movieList[i].computedStyleMap().get("transform")[0].x.value - 345}px)`;
         } else{
             movieList[i].style.transform = "translateX(0)"
             clickCounter = 0;
